@@ -3,83 +3,61 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Collections — KLIN House</title>
-<meta name="description" content="KLIN House Collections: Ivory Atelier, Sage Maison, Burgundy Moments.">
+<title>Collections — KLIN</title>
+<meta name="description" content="KLIN Collections: PRARTHANA and PRITSANA.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 :root{
   --ivory:#F3EEE6;
-  --paper:#F7F3EC;
   --ink:#1C1915;
-  --ink-soft:#3A342C;
   --muted:#6A635B;
   --sage:#5D6A57;
-  --sage-deep:#3E483C;
   --burgundy:#6B2C3E;
-  --gold:#A68658;
-  --line:rgba(28,25,21,.12);
+  --line:rgba(28,25,21,.1);
 }
 *{box-sizing:border-box}
-body{
-  margin:0;
-  background:var(--ivory);
-  color:var(--ink);
-  font-family:"Jost",sans-serif;
-  font-weight:300;
-  line-height:1.65;
-}
-img{max-width:100%;height:auto;display:block}
+body{margin:0;background:var(--ivory);color:var(--ink);font-family:"Jost",sans-serif;font-weight:300;line-height:1.6}
+img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
 .nav{
   position:sticky;top:0;z-index:20;
   display:flex;justify-content:space-between;align-items:center;
-  padding:18px 32px;
-  background:rgba(243,238,230,.92);
-  backdrop-filter:blur(10px);
+  padding:20px 40px;
+  background:rgba(243,238,230,.95);
+  backdrop-filter:blur(12px);
   border-bottom:1px solid var(--line);
 }
-.word{font-family:"Cormorant Garamond",serif;letter-spacing:.36em;font-size:18px;font-weight:500}
-.nav nav a{font-size:11px;letter-spacing:.18em;text-transform:uppercase;margin-left:24px;color:var(--ink-soft)}
-.nav nav a:hover{color:var(--burgundy)}
-.page{
-  max-width:1100px;
-  margin:0 auto;
-  padding:60px 40px;
-}
+.word{font-family:"Cormorant Garamond",serif;letter-spacing:.4em;font-size:20px;font-weight:500}
+.nav nav a{font-size:11px;letter-spacing:.22em;text-transform:uppercase;margin-left:28px}
+.page{max-width:1100px;margin:0 auto;padding:70px 40px}
+.kicker{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--sage)}
 .section-title{
   font-family:"Cormorant Garamond",serif;
-  font-size:clamp(40px,6vw,64px);
+  font-size:clamp(42px,6vw,70px);
   font-weight:500;
-  margin:0 0 16px;
+  margin:8px 0 16px;
+  line-height:.95;
 }
-.kicker{font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--sage)}
-.collection{
-  margin:80px 0;
-  scroll-margin-top:80px;
-}
+.collection{margin:90px 0;scroll-margin-top:90px}
 .collection-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:24px;
-  margin-top:24px;
+  gap:20px;
+  margin-top:20px;
 }
-.collection-grid img{aspect-ratio:1;object-fit:cover;width:100%;border:1px solid var(--line)}
+.collection-grid img{width:100%;aspect-ratio:1;object-fit:cover}
 .btn{
   display:inline-block;
-  font-size:11px;
-  letter-spacing:.2em;
-  text-transform:uppercase;
-  border-bottom:1px solid var(--burgundy);
-  padding-bottom:4px;
-  color:var(--burgundy);
-  margin-top:16px;
+  font-size:11px;letter-spacing:.22em;text-transform:uppercase;
+  border-bottom:1px solid var(--burgundy);padding-bottom:3px;
+  color:var(--burgundy);margin-top:16px;
 }
 @media(max-width:800px){
   .collection-grid{grid-template-columns:1fr}
-  .page{padding:40px 22px}
-  .nav{padding:14px 18px}
+  .page{padding:50px 24px}
+  .nav{padding:16px 20px}
 }
 </style>
 </head>
@@ -88,60 +66,45 @@ a{color:inherit;text-decoration:none}
   <div class="word">KLIN</div>
   <nav>
     <a href="index.html">Home</a>
-    <a href="#ivory">Ivory</a>
-    <a href="#sage">Sage</a>
-    <a href="#burgundy">Burgundy</a>
-    <a href="index.html#inquire">Inquire</a>
+    <a href="#prarthana">PRARTHANA</a>
+    <a href="#pritsana">PRITSANA</a>
+    <a href="index.html#inquire">Contact</a>
   </nav>
 </header>
 
 <div class="page">
-  <div class="kicker">Collections</div>
-  <h1 class="section-title">The House of KLIN</h1>
-  <p>Three lines composed in ivory, sage and burgundy — each made to last beyond the day of delivery.</p>
+  <div class="kicker">The Collections</div>
+  <h1 class="section-title">Objects of lasting beauty.</h1>
 
-  <section class="collection" id="ivory">
+  <section class="collection" id="prarthana">
     <div class="kicker">01</div>
-    <h2 class="section-title">Ivory Atelier</h2>
-    <p>Quiet objects that stay close: stationery, tags, boxes and small vitrines. Designed to be held and written on.</p>
+    <h2 class="section-title">PRARTHANA</h2>
+    <p>Softness, with presence. Quiet arrangements that hold space without overwhelming it.</p>
     <div class="collection-grid">
-      <img src="img/cards-ivory-sage.jpg" alt="Ivory sage cards">
-      <img src="img/hang-tag.jpg" alt="Hang tag">
-      <img src="img/window-box.jpg" alt="Window box">
-      <img src="img/vitrine.jpg" alt="Vitrine">
+      <img src="img/orchid-urn.jpg" alt="PRARTHANA 1">
+      <img src="img/vitrine.jpg" alt="PRARTHANA 2">
+      <img src="img/window-box.jpg" alt="PRARTHANA 3">
+      <img src="img/cards-ivory-sage.jpg" alt="PRARTHANA 4">
     </div>
-    <a class="btn" href="index.html#inquire">Inquire for Ivory</a>
+    <a class="btn" href="index.html#inquire">Inquire about PRARTHANA</a>
   </section>
 
-  <section class="collection" id="sage">
+  <section class="collection" id="pritsana">
     <div class="kicker">02</div>
-    <h2 class="section-title">Sage Maison</h2>
-    <p>Installations for real spaces — ceremony arches, door frames, lobby urns. Calm, architectural, and placed with intention.</p>
+    <h2 class="section-title">PRITSANA</h2>
+    <p>Depth, in every detail. Sculptural florals with lasting presence — ivory, sage and burgundy.</p>
     <div class="collection-grid">
-      <img src="img/maison-arch.jpg" alt="Ceremony arch">
-      <img src="img/maison-stand.jpg" alt="Door spray">
-      <img src="img/orchid-urn.jpg" alt="Lobby urn">
-      <img src="img/sage-box.jpg" alt="Sage box">
+      <img src="img/maison-arch.jpg" alt="PRITSANA 1">
+      <img src="img/maison-stand.jpg" alt="PRITSANA 2">
+      <img src="img/love-infused.jpg" alt="PRITSANA 3">
+      <img src="img/three-feelings.jpg" alt="PRITSANA 4">
     </div>
-    <a class="btn" href="index.html#inquire">Inquire for Maison</a>
-  </section>
-
-  <section class="collection" id="burgundy">
-    <div class="kicker">03</div>
-    <h2 class="section-title">Burgundy Moments</h2>
-    <p>A single strong note of burgundy against ivory. For the occasions that call for deeper presence — not everywhere, but unforgettable where it appears.</p>
-    <div class="collection-grid">
-      <img src="img/orchid-urn.jpg" alt="Burgundy orchid">
-      <img src="img/love-infused.jpg" alt="Love infused">
-      <img src="img/open-box.jpg" alt="Open box">
-      <img src="img/three-feelings.jpg" alt="Three feelings">
-    </div>
-    <a class="btn" href="index.html#inquire">Inquire for Burgundy</a>
+    <a class="btn" href="index.html#inquire">Inquire about PRITSANA</a>
   </section>
 </div>
 
-<footer style="padding:28px;text-align:center;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#6A635B;border-top:1px solid rgba(28,25,21,.12)">
-  KLIN House · Lasting impression
+<footer style="padding:30px;text-align:center;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#6A635B;border-top:1px solid rgba(28,25,21,.1)">
+  KLIN · Design Concept
 </footer>
 </body>
 </html>
