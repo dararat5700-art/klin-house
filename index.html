@@ -134,6 +134,18 @@ h1{
   margin:12px 8px 4px;
 }
 .prod-card .note{font-size:13px;color:var(--muted);margin:0 8px 12px}
+.burgundy-highlight{
+  max-width:1280px;
+  margin:40px auto;
+  padding:40px;
+  background:var(--paper);
+  border:1px solid var(--line);
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:32px;
+  align-items:center;
+}
+.burgundy-highlight img{aspect-ratio:1;object-fit:cover;width:100%}
 .inquire{
   background:var(--sage-deep);
   color:var(--ivory);
@@ -147,6 +159,22 @@ h1{
   color:var(--ivory);
 }
 .inquire p{max-width:520px;margin:0 auto 20px;color:#E7E0D4}
+.form-group{margin:12px 0;text-align:left;max-width:480px;margin-left:auto;margin-right:auto}
+.form-group label{display:block;font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px}
+.form-group input,.form-group textarea,.form-group select{
+  width:100%;padding:10px;border:1px solid rgba(255,255,255,.3);background:transparent;color:var(--ivory);font-family:inherit;
+}
+.wa-btn{
+  display:inline-block;
+  margin:12px 8px;
+  padding:12px 24px;
+  background:#25D366;
+  color:white;
+  border-radius:4px;
+  font-size:13px;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+}
 footer{
   padding:28px 40px;
   text-align:center;
@@ -157,7 +185,7 @@ footer{
   border-top:1px solid var(--line);
 }
 @media(max-width:900px){
-  .coll-grid{grid-template-columns:1fr}
+  .coll-grid,.burgundy-highlight{grid-template-columns:1fr}
   .hero,.collections,.featured{padding-left:22px;padding-right:22px}
   .nav{padding:14px 18px}
   .nav nav a{margin-left:14px;font-size:10px}
@@ -168,9 +196,9 @@ footer{
 <header class="nav">
   <div class="word">KLIN</div>
   <nav>
-    <a href="#collections">Collections</a>
+    <a href="collections.html">Collections</a>
     <a href="#featured">Objects</a>
-    <a href="#maison">Maison</a>
+    <a href="#burgundy">Burgundy</a>
     <a href="#inquire">Inquire</a>
   </nav>
 </header>
@@ -190,7 +218,7 @@ footer{
       <div class="coll-body">
         <h3>Ivory Atelier</h3>
         <p>Quiet stationery and objects in ivory and sage — the line that stays close.</p>
-        <a class="btn" href="#inquire">View Collection</a>
+        <a class="btn" href="collections.html#ivory">View Collection</a>
       </div>
     </article>
     <article class="coll-card">
@@ -198,7 +226,7 @@ footer{
       <div class="coll-body">
         <h3>Sage Maison</h3>
         <p>Installations for openings and ceremonies — arches, urns and door frames in calm tones.</p>
-        <a class="btn" href="#inquire">View Collection</a>
+        <a class="btn" href="collections.html#sage">View Collection</a>
       </div>
     </article>
     <article class="coll-card">
@@ -206,7 +234,7 @@ footer{
       <div class="coll-body">
         <h3>Burgundy Moments</h3>
         <p>Deeper gestures for special occasions — a single strong note of burgundy against ivory.</p>
-        <a class="btn" href="#inquire">View Collection</a>
+        <a class="btn" href="collections.html#burgundy">View Collection</a>
       </div>
     </article>
   </div>
@@ -235,13 +263,59 @@ footer{
       <h4>Love Infused</h4>
       <p class="note">Rose object in an ivory bag</p>
     </figure>
+    <figure class="prod-card">
+      <img src="img/open-box.jpg" alt="Open box">
+      <h4>Open Object</h4>
+      <p class="note">The interior revealed</p>
+    </figure>
+    <figure class="prod-card">
+      <img src="img/sage-box.jpg" alt="Sage box">
+      <h4>Closed Object</h4>
+      <p class="note">Already a piece before opening</p>
+    </figure>
+  </div>
+</section>
+
+<section class="burgundy-highlight" id="burgundy">
+  <img src="img/orchid-urn.jpg" alt="Burgundy orchid in KLIN urn">
+  <div>
+    <div class="kicker">Burgundy Moments</div>
+    <h2 class="section-title" style="text-align:left;margin-top:8px">A single strong note.</h2>
+    <p>โทนเบอร์กันดี่ไม่ได้ถูกใช้ทั้วทั้งผืนผ้า แต่ถูกวางไว้เป็นจุดที่ตั้งใจให้จำ เหมาะสำหรับงานพิเศษที่ต้องการและวันสำคัญ ซึ่งหรือแจกันที่มีเบอร์กันดี่เป็นเส้นให้จะถูกจำได้ทันที</p>
+    <a class="btn" href="collections.html#burgundy">Explore Burgundy</a>
   </div>
 </section>
 
 <section class="inquire" id="inquire">
   <h2>For the next piece.</h2>
   <p>สำหรับงาน Atelier และงานติดตั้ง Maison — บอกวัน สถานที่ และโทนสีที่อยากได้ แล้วจะนัดวัดพื้นที่และจัดใบเสนอราคาให้</p>
-  <a class="btn" href="mailto:contact@klin.house" style="color:#E7E0D4;border-color:#A68658">Inquire</a>
+  
+  <a class="wa-btn" href="https://wa.me/66XXXXXXXXX" target="_blank">WhatsApp</a>
+  <a class="btn" href="mailto:contact@klin.house" style="color:#E7E0D4;border-color:#A68658">Email</a>
+
+  <form action="mailto:contact@klin.house" method="post" enctype="text/plain" style="margin-top:32px">
+    <div class="form-group">
+      <label>Name / ชื่อ</label>
+      <input type="text" name="name" required>
+    </div>
+    <div class="form-group">
+      <label>Date & Place / วันและสถานที่</label>
+      <input type="text" name="dateplace">
+    </div>
+    <div class="form-group">
+      <label>Tone / โทนสี</label>
+      <select name="tone">
+        <option>Ivory + Sage</option>
+        <option>Burgundy Moments</option>
+        <option>Mixed / Custom</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Message / รายละเอียด</label>
+      <textarea name="message" rows="4"></textarea>
+    </div>
+    <button type="submit" class="btn" style="color:#E7E0D4;border-color:#A68658;background:none;cursor:pointer">Send Inquiry</button>
+  </form>
 </section>
 
 <footer>
